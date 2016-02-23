@@ -1,0 +1,7 @@
+---
+Name: silverstripe-global-content
+---
+
+ContentController:
+  extensions:
+    - GlobalContent_ContentControllerExtension

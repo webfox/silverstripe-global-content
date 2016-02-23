@@ -1,0 +1,23 @@
+{
+  "name": "webfox/silverstripe-global-content",
+  "description": "Silverstripe SiteConfig like interface for global content that content-authors can access",
+  "keywords": [
+    "webfox",
+    "silverstripe",
+    "global"
+  ],
+  "type": "silverstripe-module",
+  "require": {
+    "silverstripe/cms": "~3.2"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Matthew Hailwood",
+      "email": "matthew@webfox.co.nz"
+    }
+  ],
+  "extra": {
+    "installer-name": "silverstripe-global-content"
+  }
+}
