@@ -8,6 +8,7 @@
   ],
   "type": "silverstripe-module",
   "require": {
+    "php": ">=5.4",
     "silverstripe/cms": "~3.2"
   },
   "license": "MIT",
