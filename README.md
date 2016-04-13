@@ -21,7 +21,9 @@ Too add additional fields:
 * Create a `DataExtension` that gets applied to `GlobalContent`
 * The extension requires an `updateFields(FieldList $fields)` method and any standard `DataExtension` properties 
 
-```php
+```php5
+<?php
+
 class GlobalContentExtension extends DataExtension 
 {
 
