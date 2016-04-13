@@ -2,9 +2,7 @@
 ## Composer ##
 Run the following to add this module as a requirement and install it via composer.
 
-```
-#!bash
-
+```bash
 composer require "webfox/silverstripe-global-content"
 ```
 then browse to /dev/build?flush=all
