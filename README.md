@@ -21,6 +21,12 @@ Too add additional fields:
 * Create a `DataExtension` that gets applied to `GlobalContent`
 * The extension requires an `updateFields(FieldList $fields)` method and any standard `DataExtension` properties 
 
+```yaml
+GlobalContent:
+  extensions:
+    - GlobalContentExtension
+```
+
 ```php5
 <?php
 
