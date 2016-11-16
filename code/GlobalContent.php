@@ -17,10 +17,6 @@ class GlobalContent extends DataObject
         $fields = parent::getCMSFields();
         $fields->add(HiddenField::create('ID', 'ID', $this->ID));
 
-        /** @var TabSet $rootTabset */
-        $rootTabset = $fields->fieldByName('Root');
-        $rootTabset->setTemplate('TablessCMSTabSet');
-
         return $fields;
     }
 

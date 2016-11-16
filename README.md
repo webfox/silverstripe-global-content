@@ -2,7 +2,9 @@
 ## Composer ##
 Run the following to add this module as a requirement and install it via composer.
 
-```bash
+```
+#!bash
+
 composer require "webfox/silverstripe-global-content"
 ```
 then browse to /dev/build?flush=all
@@ -19,17 +21,9 @@ This module adds a convenient `SiteConfig` like interface for managing global co
 #Module Usage#
 Too add additional fields:
 * Create a `DataExtension` that gets applied to `GlobalContent`
-* The extension requires an `updateFields(FieldList $fields)` method and any standard `DataExtension` properties 
+* The extension requires an `updateCMSFields(FieldList $fields)` method and any standard `DataExtension` properties 
 
-```yaml
-GlobalContent:
-  extensions:
-    - GlobalContentExtension
-```
-
-```php5
-<?php
-
+```php
 class GlobalContentExtension extends DataExtension 
 {
 
@@ -56,6 +50,12 @@ The use with permissions:
 To use in templates:
 * `$GlobalContent.MyFieldName`
 * `<% with $GlobalContent %> {$MyFieldName} <% end_with %>`
+* `$GlobalContent('MyFieldName')`
 
 To use in PHP:
 * `GlobalContent::inst()->MyFieldName`
+
+To alter the edit for directly:
+* Create a new `LeftAndMainExtension` that gets applied to `GlobalContentAdmin`
+* The extension can use the `updateEditForm($form)` method to update the form **before** data is loaded.
+* The extension can use the `updateEditFormData($form)` method to update the form **after** data is loaded.
