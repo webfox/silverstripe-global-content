@@ -39,7 +39,7 @@ class GlobalContent extends DataObject
 
     public function canEdit($member = null)
     {
-        return Permission::check('CMS_ACCESS_GlobalContent_ModelAdmin', 'any', $member);
+        return Permission::check('CMS_ACCESS_GlobalContentAdmin', 'any', $member);
     }
 
     public function canDelete($member = null)
