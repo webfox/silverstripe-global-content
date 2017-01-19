@@ -55,7 +55,7 @@ To use in templates:
 To use in PHP:
 * `GlobalContent::inst()->MyFieldName`
 
-To alter the edit for directly:
+To alter the edit form directly:
 * Create a new `LeftAndMainExtension` that gets applied to `GlobalContentAdmin`
 * The extension can use the `updateEditForm($form)` method to update the form **before** data is loaded.
 * The extension can use the `updateEditFormData($form)` method to update the form **after** data is loaded.
