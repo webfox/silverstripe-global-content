@@ -1,24 +1,25 @@
-# Installation Instructions #
-## Composer ##
+# silverstripe-global-content
+
+## Installation
+This module only supports installation via composer.
+
 Run the following to add this module as a requirement and install it via composer.
 
-```
-#!bash
-
+```sh
 composer require "webfox/silverstripe-global-content"
 ```
 then browse to /dev/build?flush=all
 
 
-#Requirements#
-* Silverstripe 3.2+
-* php5.4+ 
+## Requirements
+* SilverStripe 3.2+
+* PHP 5.4+ 
 
-#Module Overview#
+## Module Overview
 This module adds a convenient `SiteConfig` like interface for managing global content.
  Useful for when you want global content but don't want to give content-authors access to `SiteConfig`
  
-#Module Usage#
+## Module Usage
 Too add additional fields:
 * Create a `DataExtension` that gets applied to `GlobalContent`
 * The extension requires an `updateCMSFields(FieldList $fields)` method and any standard `DataExtension` properties 
